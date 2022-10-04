@@ -25,4 +25,14 @@ public class Sample21Controller {
     model.addAttribute("tasuResult1", tasuResult);
     return "sample21.html";
   }
+
+  @GetMapping("/sample23")
+  public String sample23(@RequestParam Integer tasu1, @RequestParam Integer tasu2, ModelMap model) {
+    int tasuResult = tasu1 + tasu2;
+    model.addAttribute("tasuResult2", tasuResult);
+    // ModelMap型変数のmodelにtasuResult2という名前の変数で，tasuResultの値を登録する．
+    // ここで値を登録するとthymeleafが受け取り，htmlで処理することができるようになる
+    return "sample21.html";
+
+  }
 }
