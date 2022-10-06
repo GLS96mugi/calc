@@ -33,6 +33,10 @@ public class Sample21Controller {
     // ModelMap型変数のmodelにtasuResult2という名前の変数で，tasuResultの値を登録する．
     // ここで値を登録するとthymeleafが受け取り，htmlで処理することができるようになる
     return "sample21.html";
+  }
 
+  @GetMapping("/sample24")
+  public String sample24() {
+    return "sample24.html";
   }
 }
