@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sample24</title>
+</head>
+
+<body>
+  <p>
+  <form action="/sample25" method="post">
+    <input type="number" name="kakeru1" />×
+    <input type="number" name="kakeru2" />
+    <input type="submit" value="計算"><input type="reset" value="リセット">
+  </form>
+  </p>
+  <div th:if="${kakeruResult}">
+    結果：[[${kakeruResult}]]
+  </div>
+</body>
+
+</html>
